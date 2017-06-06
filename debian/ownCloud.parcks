@@ -35,14 +35,14 @@
             "package":"php-mcrypt"
         },
         {
-            "package":"php-imagick"
-        }
-    ],
-    "post-installation":[
-        {
-            "type":"plugin",
-            "name":"ownCloud",
-            "url":"https://raw.githubusercontent.com/Parcks/plugins/master/debian/ownCloudPlugin.ppl"
+            "package":"php-imagick",
+						"post-installation":[
+				        {
+				            "type":"plugin",
+				            "name":"ownCloud",
+				            "url":"https://raw.githubusercontent.com/Parcks/plugins/master/debian/ownCloudPlugin.ppl"
+				        }
+				    ]
         }
     ]
 }
