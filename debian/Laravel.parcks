@@ -1,0 +1,39 @@
+{
+  "name":"Laravel installer",
+  "install":[
+    {
+      "package":"wget"
+    },
+    {
+      "package":"mysql-server"
+    },
+    {
+      "package":"php",
+      "alternative-names":["php7.0","php5"]
+    },
+    {
+      "package":"php-mbstring",
+      "alternative-names":["php7.0-mbstring", "php5-mbstring", "php5-cli"]
+    },
+    {
+      "package":"php-xml",
+      "alternative-names":["php7.0-xml", "php5-xml", "php-xml-parser"]
+    },
+    {
+      "package":"php-mysql",
+      "alternative-names":["php7.0-mysql", "php5-mysql"],
+      "post-installation":[
+        {
+          "type":"remote",
+          "name":"Composer",
+          "url":"https://raw.githubusercontent.com/Parcks/plugins/master/debian/Composer.ppl"
+        },
+        {
+          "type":"remote",
+          "name":"Laravel",
+          "url":"https://raw.githubusercontent.com/Parcks/plugins/master/debian/Laravel.ppl"
+        }
+      ]
+    }
+  ]
+}

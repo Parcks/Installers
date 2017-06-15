@@ -5,7 +5,8 @@
 						"package":"wget"
 				},
 				{
-            "package":"php"
+            "package":"php",
+			      "alternative-names":["php7.0", "php5"]
         },
         {
             "package":"apache2"
@@ -14,31 +15,39 @@
             "package":"mariadb-server"
         },
         {
-            "package":"libapache2-mod-php"
+            "package":"libapache2-mod-php",
+			      "alternative-names":["libapache2-mod-php7.0", "libapache2-mod-php5"]
         },
         {
-            "package":"php-gd"
+            "package":"php-gd",
+			      "alternative-names":["php7.0-gd", "php5-gd"]
         },
         {
-            "package":"php-json"
+            "package":"php-json",
+			      "alternative-names":["php7.0-json", "php5-json"]
         },
         {
-            "package":"php-mysql"
+            "package":"php-mysql",
+			      "alternative-names":["php7.0-mysql", "php5-mysql"]
         },
         {
-            "package":"php-curl"
+            "package":"php-curl",
+			      "alternative-names":["php7.0-curl", "php5-curl"]
         },
         {
-            "package":"php-intl"
+            "package":"php-intl",
+			      "alternative-names":["php7.0-intl", "php5-intl"]
         },
         {
-            "package":"php-mcrypt"
+            "package":"php-mcrypt",
+			      "alternative-names":["php7.0-mcrypt", "php5-mcrypt"]
         },
         {
             "package":"php-imagick",
+						"alternative-names":["php7.0-imagick", "php5-imagick"],
 						"post-installation":[
 				        {
-				            "type":"plugin",
+				            "type":"remote",
 				            "name":"ownCloud",
 				            "url":"https://raw.githubusercontent.com/Parcks/plugins/master/debian/ownCloudPlugin.ppl"
 				        }

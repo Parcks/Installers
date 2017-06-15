@@ -1,0 +1,69 @@
+{
+  "name":"Nextcloud installer",
+  "install":[
+    {
+      "package":"wget"
+    },
+    {
+      "package":"php",
+      "alternative-names":["php7.0", "php5"]
+    },
+    {
+      "package":"apache2"
+    },
+    {
+      "package":"mariadb-server"
+    },
+    {
+      "package":"libapache2-mod-php",
+      "alternative-names":["libapache2-mod-php7.0", "libapache2-mod-php5"]
+    },
+    {
+      "package":"php-gd",
+      "alternative-names":["php7.0-gd", "php5-gd"]
+    },
+    {
+      "package":"php-json",
+      "alternative-names":["php7.0-json", "php5-json"]
+    },
+    {
+      "package":"php-mysql",
+      "alternative-names":["php7.0-mysql", "php5-mysql"]
+    },
+    {
+      "package":"php-curl",
+      "alternative-names":["php7.0-curl", "php5-curl"]
+    },
+    {
+      "package":"php-mbstring",
+      "alternative-names":["php7.0-mbstring", "php5-mbstring", "php5-cli"]
+    },
+    {
+      "package":"php-intl",
+      "alternative-names":["php7.0-intl", "php5-intl"]
+    },
+    {
+      "package":"php-mcrypt",
+      "alternative-names":["php7.0-mcrypt", "php5-mcrypt"]
+    },
+    {
+      "package":"php-imagick",
+      "alternative-names":["php7.0-imagick", "php5-imagick"]
+    },
+    {
+      "package":"php-xml",
+      "alternative-names":["php7.0-xml", "php5-xml", "php-xml-parser"]
+    },
+    {
+      "package":"php-zip",
+      "alternative-names":["php7.0-zip", "php5-zip", "php5-cli"],
+      "post-installation":[
+        {
+          "type":"remote",
+          "name":"Nextcloud",
+          "url":"https://raw.githubusercontent.com/Parcks/plugins/master/debian/NextcloudPlugin.ppl"
+        }
+      ]
+    }
+  ]
+}
