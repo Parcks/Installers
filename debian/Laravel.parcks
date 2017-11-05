@@ -20,6 +20,10 @@
       "alternative-names":["php7.0-xml", "php5-xml", "php-xml-parser"]
     },
     {
+      "package":"php-zip",
+      "alternative-names":["php7.1-zip", "php7.0-zip", "php5-zip"]
+    },
+    {
       "package":"php-mysql",
       "alternative-names":["php7.0-mysql", "php5-mysql"],
       "post-installation":[
